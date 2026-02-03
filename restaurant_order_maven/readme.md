@@ -18,15 +18,9 @@ Extraction:
 Transformation:
 
    1.  Combined both csv
-      - Both csv have common key menu_item_id for menu_item.csv and item_id for order_details.csv.
-<img width="414" height="227" alt="image" src="https://github.com/user-attachments/assets/985db5a7-f148-4f98-9e9b-c100057563c1" />
-
+      - Both csv have common key menu_item_id for menu_items.csv and item_id for order_details.csv.
+      - Created new sheet in order_details named menu_items and copy everything from menu_items.csv into this new sheet.
+      - On order_details.csv,we use XLOOKUP function to fill info for each new column item_name, category, price.
        
-
-    Applied XLOOKUP to map relational data across tables.
-
-    Formatted dates and currency for consistency.
-
-Analysis: Created a Pivot Table to summarize [Key Metric].
-
+```excel =XLOOKUP(E3,menu_items!$A$1:$A$33,menu_items!$B$1:$B$33,,0,1) ```
 
