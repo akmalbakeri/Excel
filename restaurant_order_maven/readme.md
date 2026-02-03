@@ -1,23 +1,32 @@
-# This is a project for Analysis using Microsoft Excel
+## Restaurant order analysis using Microsoft Excel
 
-Link https://mavenanalytics.io/data-playground/restaurant-orders
+This is a an analysis based on Maven dataset 
 
-Situation
-You've just been hired as a Data Analyst for the Taste of the World Cafe, a restaurant that has diverse menu offerings and serve generous portions
-
-The Assignment 
-The Taste of the World Cafe debuted a new menu at the start of the year.
-You've been asked to dig into the customer data to see which menu items are doing well / not well and what the top
-customers seem to like best
-
-The Objectives
-1. Explore the menu_items table to get an idea of what's on the new menu.
-2. Explore the order_details table to get an idea of the data that's been collected.
-3. Use both tables to understand how customers are reacting to the new menu.
-
-Recommended Analysis
+Based on this dataset, Maven recommend to answer these questions based on the dataset given. And we will answer them.
 
 1. What were the least and most ordered items? What categories were they in?
 2. What do the highest spend orders look like? Which items did they buy and how much did they spend?
 3. Were there certain times that had more or less orders?
 4. Which cuisines should we focus on developing more menu items for based on the data
+
+📂 Project Workflow
+
+Extraction: 
+1.  Downloaded raw CSV data from [Restaurant Order dataset](https://mavenanalytics.io/data-playground/restaurant-orders)
+2.  2 files received menu_item.csv and order_details.csv
+
+Transformation:
+
+   1.  Combined both csv
+      - Both csv have common key menu_item_id for menu_item.csv and item_id for order_details.csv.
+<img width="414" height="227" alt="image" src="https://github.com/user-attachments/assets/985db5a7-f148-4f98-9e9b-c100057563c1" />
+
+       
+
+    Applied XLOOKUP to map relational data across tables.
+
+    Formatted dates and currency for consistency.
+
+Analysis: Created a Pivot Table to summarize [Key Metric].
+
+
