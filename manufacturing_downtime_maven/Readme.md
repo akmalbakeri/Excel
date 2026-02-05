@@ -30,7 +30,7 @@ Built a dynamic dashboard featuring:
 * **Efficiency vs. Product Line:** Comparative analysis of line performance.
 * **Operator Factor %:** Breakdown of downtime causes per employee.
 
-![Excel Dashboard](dashboard mfg.JPG)
+![Manufacturing Dashboard](dashboard/mfg.JPG)
 
 [📂 Download Manufacturing Analysis Excel File](Manufacturing_Line_Productivity.xlsx)
 * Please use file > option > advanced > Display option for this workbook : [/] Show sheet tabs to work on this file.
@@ -92,6 +92,9 @@ Built a dynamic dashboard featuring:
 ---
 
 ### 🚩 Operator Error Correlation : Do any operators struggle with particular types of operator error?
+
+![Factors by operators](downtime_factor_by_operator.jpg)
+
 | Factor | Struggling Operators |
 | :--- | :--- |
 | **Machine Adjustment** | Charlie, Dee, Dennis |
