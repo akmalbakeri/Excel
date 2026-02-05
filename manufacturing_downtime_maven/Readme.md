@@ -16,7 +16,7 @@ These are the questions imposed that we can answer
 
 ## 🛠️ Technical Implementation
 
-### 1. Data Modelling with Power Query and Pivot Table  ⚙️
+### Data Modelling with Power Query and Pivot Table  ⚙️
 * Unpivoted the 'line downtime' sheet as it is a matrix to create a normalized data structure with Power Query
 * Loaded data into the **Excel Data Model** and established table relationships.
 * Created the following calculated measures 
@@ -24,7 +24,7 @@ These are the questions imposed that we can answer
   * min Product Time =  `[Count of Batch] * [Min Batch Time]`
   * Efficiency_product =   `[Min Product Time] / [Total Min]`
 
-### 3. Visualization 📈
+###  Visualization 📈
 Built a dynamic dashboard featuring:
 * **Downtime vs. Factors:** Bar chart identifying major time-wasters.
 * **Efficiency vs. Product Line:** Comparative analysis of line performance.
