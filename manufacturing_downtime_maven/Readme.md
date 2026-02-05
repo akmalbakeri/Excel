@@ -18,11 +18,15 @@ These are the questions imposed that we can answer
 
 ### Data Modelling with Power Query and Pivot Table  ⚙️
 * Unpivoted the 'line downtime' sheet as it is a matrix to create a normalized data structure with Power Query
-* Loaded data into the **Excel Data Model** and established table relationships.
+* Loaded data into the **Excel Data Model** and established table relationships. Resulted in below data model
+
+![Data Model](data_model_mnfg.JPG)
+
 * Created the following calculated measures 
   * Total min =  `[End Time] - [Start Time]`
   * min Product Time =  `[Count of Batch] * [Min Batch Time]`
   * Efficiency_product =   `[Min Product Time] / [Total Min]`
+
 
 ###  Visualization 📈
 Built a dynamic dashboard featuring:
