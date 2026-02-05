@@ -1,6 +1,6 @@
 # 🏭 Manufacturing Downtime Analysis
 
-An end-to-end data analysis project using **Power Query** and **Power Pivot** to identify production bottlenecks and optimize operator efficiency.
+A data analysis project using **Power Query** and **Power Pivot** to create an **Excel Dashboard** based on Maven Analytics dataset
 
 📂 **Data Source:** [Manufacturing Downtime Dataset by Maven Analytics](https://mavenanalytics.io/guided-projects/manufacturing-downtime-analysis)
 
@@ -14,7 +14,7 @@ These are the questions imposed that we can answer
 
 ---
 
-## 🛠️ Technical Implementation
+## 🛠️ Project Workflow
 
 ### Data Modelling with Power Query and Pivot Table  ⚙️
 * Unpivoted the 'line downtime' sheet as it is a matrix to create a normalized data structure with Power Query
