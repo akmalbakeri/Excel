@@ -30,7 +30,7 @@ Built a dynamic dashboard featuring:
 * **Efficiency vs. Product Line:** Comparative analysis of line performance.
 * **Operator Factor %:** Breakdown of downtime causes per employee.
 
-![Manufacturing Dashboard](dashboard/mfg.JPG)
+![Manufacturing Dashboard](dasboard_mfg.JPG)
 
 [📂 Download Manufacturing Analysis Excel File](Manufacturing_Line_Productivity.xlsx)
 * Please use file > option > advanced > Display option for this workbook : [/] Show sheet tabs to work on this file.
