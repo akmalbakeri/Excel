@@ -16,15 +16,13 @@ These are the questions imposed that we can answer
 
 ## 🛠️ Technical Implementation
 
-### 1. Data ETL (Power Query) ⚙️
+### 1. Data Modelling with Power Query and Pivot Table  ⚙️
 * Unpivoted the 'line downtime' sheet as it is a matrix to create a normalized data structure with Power Query
 * Loaded data into the **Excel Data Model** and established table relationships.
-
-### 2. Data Modeling with Pivot Table 📊
-Created the following calculated measures 
-* Total min =  `[End Time] - [Start Time]`
-* min Product Time =  `[Count of Batch] * [Min Batch Time]`
-* Efficiency_product =   `[Min Product Time] / [Total Min]`
+* Created the following calculated measures 
+  * Total min =  `[End Time] - [Start Time]`
+  * min Product Time =  `[Count of Batch] * [Min Batch Time]`
+  * Efficiency_product =   `[Min Product Time] / [Total Min]`
 
 ### 3. Visualization 📈
 Built a dynamic dashboard featuring:
@@ -32,13 +30,17 @@ Built a dynamic dashboard featuring:
 * **Efficiency vs. Product Line:** Comparative analysis of line performance.
 * **Operator Factor %:** Breakdown of downtime causes per employee.
 
+![Excel Dashboard](dashboard mfg.JPG)
+
+[📂 Download Manufacturing Analysis Excel File](Manufacturing_Line_Productivity.xlsx)
+* Please use file > option > advanced > Display option for this workbook : [/] Show sheet tabs to work on this file.
+
 ---
 
 ## 🔍 Findings based on recommended Analysis 
 
 ### ⚡ Line Efficiency : What's the current line efficiency? (total time / min time)?
 
-### ⚡ Line Efficiency by Product
 | Product | Efficiency_product |
 | :--- | :--- |
 | **LE-600** | 68.05% |
@@ -70,8 +72,6 @@ Built a dynamic dashboard featuring:
 
 ### 🛠️ Leading Downtime Factors : What are the leading factors for downtime?
 
-
-### 🛠️ Total Downtime by Factor
 | Row Labels | Sum of Downtime (min) |
 | :--- | :--- |
 | Machine adjustment | 332 |
@@ -98,3 +98,12 @@ Built a dynamic dashboard featuring:
 | **Batch Change** | Mac |
 
 ---
+
+### Recommendation
+* According to Pareto Principle, we should prioritize top 80% of downtime factor, which is in top 5 of factors.
+* And of this 5 factors, 3 are operators error : Machine adjustment, Batch change, Batch coding error.
+* And 3 of operators struggle with machine adjustment, Charlie , Dee , Dennis
+* So the recommendation based on this top down approach is to focus on machine adjustment issue.
+* We can improve SOP with more clarity , retrain these operators and have supervisor approve machine adjustment work for every batch.
+* We should apply this on line with lowest efficiency, CO-2L Cola with 22.2%
+* For other downtime factors, we can use quality engineering by assigning RPN to each issue and create PFMEA task force. 
