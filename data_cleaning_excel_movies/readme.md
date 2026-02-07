@@ -52,6 +52,8 @@ A data cleaning project for data scrapped from imdb and netflix and put on kaggl
 1. Replace "$" and "M" with blank
 2. Code this `=IFERROR(@[Gross]*1000000,"")` for data to be like 74700000 instead of $74.7M.
 
+---
+
 ### FINISHED
 
 [Finished product](data_cleaning_movies.xlsx)
