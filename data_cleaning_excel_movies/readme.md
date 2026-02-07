@@ -2,7 +2,11 @@
 
 A data cleaning project for data scrapped from imdb and netflix and put on kaggle. 
 
-📂 **Data Source:** [Movies](https://www.kaggle.com/datasets/bharatnatrayn/movies-dataset-for-feature-extracion-prediction)
+📂 **Data Source:**
+
+[From this Repo](unclean_movie.csv)
+
+[From Kaggle](https://www.kaggle.com/datasets/bharatnatrayn/movies-dataset-for-feature-extracion-prediction)
 
 ---
 
@@ -47,3 +51,7 @@ A data cleaning project for data scrapped from imdb and netflix and put on kaggl
 
 1. Replace "$" and "M" with blank
 2. Code this `=IFERROR(@[Gross]*1000000,"")` for data to be like 74700000 instead of $74.7M.
+
+### FINISHED
+
+[Finished product](data_cleaning_movies.xlsx)
