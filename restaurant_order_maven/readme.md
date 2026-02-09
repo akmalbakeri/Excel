@@ -51,7 +51,7 @@ Based on this dataset, Maven recommend to answer these questions based on the da
 
 **Key Findings:**
 * 🏆 **Most Ordered:** Hamburger (Category: American)
-* 📉 **Least Ordered:** Chips and Salsa (Category: Mexican)
+* 📉 **Least Ordered:** Chicken Tacos (Category: Mexican)
 
 ---
 
